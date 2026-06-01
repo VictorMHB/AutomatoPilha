@@ -1,15 +1,18 @@
 #include <iostream>
-#include "Pilha.h"
+#include "Automato.h"
 
 int main() {
-    Pilha p;
+    std::string entrada;
+    std::cout << "Digite a string: ";
+    std::cin >> entrada;
 
-    p.empilhar('1');
-    p.empilhar('2');
-    p.empilhar('3');
+    Automato a;
+    a.processar(entrada);
 
-    while (!p.estaVazia()) {
-        std::cout << p.desempilhar() << std::endl;
+    if (a.estaAceito()) {
+        std::cout << "String ACEITA!" << std::endl;
+    } else {
+        std::cout << "String REJEITADA!" << std::endl;
     }
 
     return 0;
