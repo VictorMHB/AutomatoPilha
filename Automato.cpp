@@ -23,7 +23,7 @@ void Automato::processar(std::string entrada) {
             if (c == 'b') {
                 pilha.empilhar('A');
             } else if (c == 'c') {
-                if (!pilha.estaVazia()) {
+                if (pilha.estaVazia()) {
                     estadoAtual = 4;
                     return;
                 }
@@ -35,7 +35,7 @@ void Automato::processar(std::string entrada) {
             }
         } else if (estadoAtual == 2) { // q2 - esperando 'c'
             if (c == 'c') {
-                if (!pilha.estaVazia()) {
+                if (pilha.estaVazia()) {
                     estadoAtual = 4;
                     return;
                 }
