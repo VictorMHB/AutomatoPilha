@@ -1,6 +1,5 @@
 # Autômato de Pilha
 ### Reconhecedor da Linguagem `L = { aⁿ bᵏ cⁿ⁺ᵏ | n ≥ 1, k ≥ 1 }`
-*Implementação em C++ com Orientação a Objetos*
 
 ---
 
